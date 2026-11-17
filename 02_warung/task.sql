@@ -63,6 +63,8 @@ UPDATE orders SET workers_worker_ID = 2 WHERE order_ID = 2;
 
 UPDATE orders SET workers_worker_ID = 3 WHERE order_ID = 3;
 
+UPDATE orders SET workers_worker_ID = 3 WHERE order_ID = 4;
+
 -- 7
 SELECT workers.worker_name, customers.customer_name, orders.*
 FROM
