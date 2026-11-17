@@ -3,6 +3,8 @@ USE warung;
 -- 1
 SELECT * FROM orders ORDER BY order_date DESC;
 
+SELECT * FROM orders ORDER BY order_date ASC;
+
 -- 2
 SELECT orders.order_date, orders.order_price, customers.customer_name
 FROM orders
