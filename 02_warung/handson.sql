@@ -44,3 +44,19 @@ SELECT o.*, w.worker_name
 FROM orders o, workers w
 WHERE
     o.workers_worker_ID = w.worker_ID
+
+-- 8
+USE warung;
+
+SELECT o.*, w.worker_name
+FROM orders o
+    INNER JOIN workers w ON o.workers_worker_ID = w.worker_ID
+WHERE
+    w.worker_ID = 3;
+
+SELECT o.*, w.worker_name
+FROM orders o
+    INNER JOIN workers w ON o.workers_worker_ID = w.worker_ID
+WHERE
+    w.worker_name LIKE '%Rina%'
+    AND o.order_date > 2027 - 01 -01
