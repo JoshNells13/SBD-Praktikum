@@ -33,6 +33,38 @@ VALUES (
         'budiman@example.com'
     );
 
+USE warung;
+
+INSERT INTO
+    workers (
+        worker_ID,
+        worker_name,
+        worker_job,
+        worker_phone,
+        worker_mail
+    )
+VALUES (
+        1,
+        'Rizky',
+        'Kasir',
+        '081111111111',
+        'rizky@example.com'
+    ),
+    (
+        2,
+        'Dimas',
+        'Koki',
+        '082222222222',
+        'dimas@example.com'
+    ),
+    (
+        3,
+        'Rina',
+        'Pelayan',
+        '083333333333',
+        'rina@example.com'
+    );
+
 -- 2
 UPDATE customers
 SET

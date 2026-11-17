@@ -83,6 +83,9 @@ GROUP BY
     workers.worker_ID,
     workers.worker_name,
     workers.worker_job
-HAVING
-    SUM(orders.order_price) > 100000
 ORDER BY total_penjualan DESC;
+
+-- 9
+SELECT * FROM workers;
+-- 10
+SELECT * FROM orders;
